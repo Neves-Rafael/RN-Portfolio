@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+:root {
+    --dark-green: #002726;
+    --black: #0E0E0E;
+    --medium-green: #006363;
+    --light-green: #00C4C3;
+    --light-gray: #737373;
+    --dark-gray: #202124;
+}
+
+.bebas {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: x-large;
+    letter-spacing: 1.5px;
+}
+
+.bebas-s {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: medium;
+    letter-spacing: 1.5px;
+}
+
+.bebas-green {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: x-large;
+    color: white;
+}
+
+.header-color {
+    background-color: #0E0E0E;
+}
+
+/* font-family: 'Bebas Neue', sans-serif; */
