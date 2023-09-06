@@ -1,43 +1,220 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/font.css">
     <link rel="stylesheet" href="css/output.css">
     <link rel="icon" href="svgs/logo.svg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Koulen&family=Roboto+Slab:wght@500;700;900&display=swap" rel="stylesheet">
 
     <title>Rafael Neves - Portfolio</title>
 </head>
-<body class="bg-slate-800">
-    <header class="header-color fixed z-10 left-0 top-0 bottom-0 w-60">
+<body class="bg-fundo ml-60">
+    <!-- HEADER -->
+    <header class="bg-black fixed z-10 left-0 top-0 bottom-0 w-60">
         <nav class="flex flex-col h-full justify-between items-center pt-6 pb-6">
             <ul>
-                <div class="">
-                    <img src="svgs/logo.svg" alt="Logo" class="m-auto">
-                    <p class="bebas-green">FRONT-END DEVELOPER</p>
+                <div class="pb-4">
+                    <a href="#" target="">
+                        <img src="svgs/logo.svg" alt="Logo" class="m-auto">
+                    </a>
+                </div>
+                <div class="justify-between flex flex-col m-auto align-middle">
+                    <img src="imagens/moon.gif" alt="" class="w-12 rounded-full m-auto p-2 dark-mode-icon hidden theme-toggle cursor-pointer">
+                    <img src="imagens/sun.gif" alt="" class="w-12 rounded-full m-auto p-2 light-mode-icon theme-toggle cursor-pointer">
+                    <div class="pt-2">
+                        <div class="text-light cursor-pointer relative js-select flex hover:bg-gray hover:rounded-full pr-2" title="selecione o seu idioma">
+                            <img src="imagens/world.gif" class="w-7 rounded-full" alt="">
+                            <p class="pl-2 pt-1">Português-PT</p> 
+                            <button>
+                                <img src="svgs/menu.svg" class="pl-2 w-6">
+                            </button>
+                        </div>
+                        <div class="bg-white absolute hidden js-menu w-full left-0 mt-2">
+                            <div class="flex flex-col gap-2 ">
+                                <div class="cursor-pointer flex justify-center hover:bg-medium-green hover:text-white py-2">Português-PT</div>
+                                <div class="cursor-pointer flex justify-center hover:bg-medium-green hover:text-white py-2">English-EN</div>
+                                <div class="cursor-pointer flex justify-center hover:bg-medium-green hover:text-white py-2">Spanish-ES</div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </ul>
-            <ul class="flex text-white flex-col gap-5 items-center hover:cursor-pointer">
-                <li class="bebas w-60 text-center hover:bg-slate-500">Projects</li>
-                <li class="bebas w-60 text-center hover:bg-slate-500">Skills</li>
-                <li class="bebas w-60 text-center hover:bg-slate-500">Contact</li>
+            <ul class="flex text-white flex-col gap-5 items-center cursor-pointer w-full text-xl">
+                <li class="text-center hover:bg-medium-green py-4 transition ease-in-out hover:transition-colors duration-300 w-full">Projetos</li>
+                <li class="text-center hover:bg-medium-green py-4 transition ease-in-out hover:transition-colors duration-300 w-full">habilidades</li>
+                <li class="text-center hover:bg-medium-green py-4 transition ease-in-out hover:transition-colors duration-300 w-full">Contato</li>
             </ul>
-            <ul>
-                <div class="flex flex-col items-start">
-                    <button class="bebas-s text-white flex items-center"><img src="svgs/l.svg" class="w-6 mb-2 mr-2"><a href="#">Linkedin</a></button>
-                    <button class="bebas-s text-white flex items-center"><img src="svgs/d.svg" class="w-6 mb-2 mr-2"><a href="#">Discord</a></button>
-                    <button class="bebas-s text-white flex items-center"><img src="svgs/g.svg" class="w-6 w-6 mb-2 mr-2"><a href="#">github</a></button>
-                    <button class="bebas-s text-white flex items-center"><img src="svgs/i.svg" class="w-6 w-6 mb-2 mr-2"><a href="#">instagram</a></button>
+            <ul class="gap-6 flex flex-col items-center">
+                <div class="grid grid-cols-2 gap-y-2 container">
+                    <button class="text-white hover:bg-gray hover:rounded-full flex justify-center py-1 px-2 gap-1 tracking-widest">
+                        <img src="svgs/l.svg" class="w-6"><a href="#">Linkedin</a>
+                    </button>
+                    <button class="text-white hover:bg-gray hover:rounded-full flex justify-center py-1 px-2 gap-1 tracking-widest">
+                        <img src="svgs/d.svg" class="w-6"><a href="#">Discord</a>
+                    </button>
+                    <button class="text-white hover:bg-gray hover:rounded-full flex justify-center py-1 px-2 gap-1 tracking-widest">
+                        <img src="svgs/g.svg" class="w-6"><a href="#">Github</a>
+                    </button>
+                    <button class="text-white hover:bg-gray hover:rounded-full flex justify-center py-1 px-2 gap-1 tracking-widest">
+                        <img src="svgs/i.svg" class="w-6"><a href="#">Instagram</a>
+                    </button>
+                </div>
+                <div>
+                    <a href="#contato" target="">
+                        <button class="bg-white flex justify-center py-2 px-6 rounded-full gap-6 hover:border-medium-green border-4">
+                            <img src="svgs/gmail.svg" class="w-6 m-auto">
+                            <img src="imagens/fast-forward.gif" class="w-5">
+                        </button>
+                    </a>
                 </div>
             </ul>
         </nav>
     </header>
-    <section>
+    <!-- /HEADER -->
 
+    <!-- HOME PAGE -->
+    <section class="h-screen container w-3/4 m-auto">
+        <div class="flex flex-col justify-around h-full">
+            <div>
+                <h1 class="text-white text-5xl font text-center font-bebas">Olá, Seja bem vindo ao meu Portfolio</h1>
+            </div>
+            <div class="w-full flex flex-row">
+                <div class="w-1/2 m-auto font-roboto">
+                    <p class="text-white text-2xl">Meu nome é Rafael Neves, tenho 22 anos e sou apaixonado por design e programação. Formado em Design Gráfico, domino 
+                    linguagens como HTML, CSS e JavaScript, além de utilizar o Tailwind CSS para otimizar meus projetos.</p><br>
+
+                    <P class="text-white text-2xl">Sou um profissional responsável e atencioso, capaz de fazer várias coisas ao mesmo tempo e de gerenciar projetos com eficiência. Gosto de encontrar soluções criativas para os problemas e estou sempre aprendendo para oferecer ideias inovadoras.<br> Meu objetivo é combinar design e programação para criar experiências digitais incríveis.
+                    </p><br>
+                </div>
+
+                <div>
+                    <img src="svgs/home.svg"  class="w-auto">
+                </div>
+            </div>
+            <div class="text-white flex flex-row justify-around bg-normal-green p-3">
+                <div class="text-center">
+                    <p>Conhecimento E</p>
+                    <p>Habilidade Técnica</p>
+                </div>
+                <div class="text-center">
+                    <p>Experiência</p>
+                    <p>Prática</p>
+                </div>
+                <div class="text-center">
+                    <p>Projetos </p>
+                    <p>Concluídos</p>
+                </div>
+                <div class="text-center flex justify-center border-2 py-1 px-3 hover:bg-white hover:text-black">
+                    <button>Saiba Mais</button>
+                </div>
+            </div>
+        </div>
     </section>
-    <footer>
+    <!-- /HOME PAGE -->
+
+    <!-- First Section -->
+    <section class="h-[125vh] container w-3/4 m-auto">
+        <div class="flex justify-between h-full items-center gap-10">
+            <div class="">
+                <div>
+                    <h1 class="text-8xl text-center text-white">PROJETOS</h1>
+                </div>
+                <div>
+                    <img src="svgs/project.svg" alt="">
+                </div>
+            </div>
+            <div>
+                <div class="max-w-[650px] max-h-[600px] border-4 border-white rounded-md p-4 gap-4 flex flex-col overflow-auto">
+                    <div class="flex bg-white p-4 rounded-md">
+                        <div class="">
+                            <p>Lorem Ipsum</p>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem consequuntur ratione quo temporibus a cum, nisi neque quidem hic doloribus, ipsam placeat. Sunt vero iste ex quibusdam assumenda. Aliquid, sequi.</p>
+                            <p>lorem Ipsum lorem Ipsum lorem Ipsum</p>
+                        </div>
+                        <div class="w-3/4 bg-gray rounded-md">
+                        </div>
+                    </div>
+                    <div class="flex bg-white p-4 rounded-md">
+                        <div class="">
+                            <p>Lorem Ipsum</p>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem consequuntur ratione quo temporibus a cum, nisi neque quidem hic doloribus, ipsam placeat. Sunt vero iste ex quibusdam assumenda. Aliquid, sequi.</p>
+                            <p>lorem Ipsum lorem Ipsum lorem Ipsum</p>
+                        </div>
+                        <div class="w-3/4 bg-gray rounded-md">
+                        </div>
+                    </div>
+                    <div class="flex bg-white p-4 rounded-md">
+                        <div class="">
+                            <p>Lorem Ipsum</p>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem consequuntur ratione quo temporibus a cum, nisi neque quidem hic doloribus, ipsam placeat. Sunt vero iste ex quibusdam assumenda. Aliquid, sequi.</p>
+                            <p>lorem Ipsum lorem Ipsum lorem Ipsum</p>
+                        </div>
+                        <div class="w-3/4 bg-gray rounded-md">
+                        </div>
+                    </div>
+                    <div class="flex bg-white p-4 rounded-md">
+                        <div class="">
+                            <p>Lorem Ipsum</p>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem consequuntur ratione quo temporibus a cum, nisi neque quidem hic doloribus, ipsam placeat. Sunt vero iste ex quibusdam assumenda. Aliquid, sequi.</p>
+                            <p>lorem Ipsum lorem Ipsum lorem Ipsum</p>
+                        </div>
+                        <div class="w-3/4 bg-gray rounded-md">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /First Section -->
+    <!-- Second Section -->
+    <section class="h-[125vh] container w-3/4 m-auto">
+        <div class="text-8xl text-center relative text-white mb-10">Skills</div>
+        <div class="flex justify-center">
+            <div class="w-1 h-3/4 absolute bg-light-green"></div>
+        </div>
+        <!-- HTML -->
+        <div class="flex justify-start mr-4">
+            <div class="w-1/2 bg-normal-green p-2">
+                <div>
+                    <p class="text-white text-4xl font-robotos">HTML</p>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+        <!-- /HTML -->
+    </section>
+    <!-- /Second Section -->
+    <!-- Third Section -->
+    <section class="h-[70vh] container w-3/4 m-auto" id="contato">
+        <div class="flex justify-between h-full items-center gap-10">
+            <div class="flex flex-col gap-6">
+                <div>
+                    <p class="text-white text-8xl">Contact-Me</p>
+                </div>
+                <div class="flex gap-4">
+                    <input type="text" name="" id="" class="w-full">
+                    <input type="text" name="" id="" class="w-full">
+                </div>
+                <div>
+                    <input type="text" name="" id="" class="w-full">
+                </div>
+                <div>
+                    <textarea name="" id="" cols="93" rows="10"></textarea>
+                </div>
+                <button class="text-start text-white text-3xl">Submit</button>
+            </div>
+            <div>
+                <img src="svgs/contact.svg" alt="">
+            </div>
+        </div>
+    </section>
+    <!-- /Third Section -->
+    <footer class="bg-black h-[15vh]">
 
     </footer>
+    <script src="js/script.js"></script>
 </body>
 </html>
