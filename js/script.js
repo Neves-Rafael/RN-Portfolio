@@ -36,7 +36,7 @@ if(localStorage.getItem('dark-theme')) {
 
 
 
-//dropdown
+//dropdown seleção idioma
 const buttonIdioma = document.querySelector('.js-select'),
       dropdown = document.querySelector('.js-menu');
 
@@ -49,3 +49,59 @@ buttonIdioma.addEventListener('click', () => {
       }
     });  
 });
+
+//selecionar idioma da pagina / saiba mais
+
+const portuguese = document.getElementById('portuguese'),
+      english = document.getElementById('english'),
+      spanish = document.getElementById('spanish'),
+      saibaMais = document.getElementById('saibaMais')
+
+portuguese.addEventListener('click', () => {
+  window.location.href = ('http://127.0.0.1:5500/index.html')
+});
+
+english.addEventListener('click', () => {
+  window.location.href = ('http://127.0.0.1:5500/en-us.html')
+});
+
+spanish.addEventListener('click', () => {
+  window.location.href = ('http://127.0.0.1:5500/es.html')
+});
+
+saibaMais.addEventListener('click', () => {
+  window.location.href = ('http://127.0.0.1:5500/saiba-mais.html')
+});
+
+
+
+
+//dropdown do menu(mediaQuery)
+const menuButton = document.getElementById('button-menu'),
+      header = document.getElementById('header');
+
+  menuButton.addEventListener('click', () => {
+    header.classList.toggle("hidden");
+});
+
+//fechar o dropdown
+const closeHeader = document.getElementById('close-header');
+  closeHeader.addEventListener('click', () => {
+    header.classList.add("hidden")
+})
+// Feche o dropdown se o usuário clicar fora dele
+window.addEventListener("click", function(event) {
+  if (!menuButton.contains(event.target) && !header.contains(event.target)) {
+    header.classList.add("hidden");
+  }
+});
+
+
+//rolar até a seção desejada
+// const document.getElementById(''),
+//       document.getElementById(''),
+//       document.getElementById(''),
+//       document.getElementById(''),
+//       document.getElementById(''),
+//       document.getElementById(''),
+//       document.getElementById('');
