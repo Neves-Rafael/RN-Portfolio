@@ -58,19 +58,19 @@ const portuguese = document.getElementById('portuguese'),
       saibaMais = document.getElementById('saibaMais')
 
 portuguese.addEventListener('click', () => {
-  window.location.href = ('http://127.0.0.1:5500/index.html')
+  window.location.href = ('./index.html')
 });
 
 english.addEventListener('click', () => {
-  window.location.href = ('http://127.0.0.1:5500/en-us.html')
+  window.location.href = ('./en-us.html')
 });
 
 spanish.addEventListener('click', () => {
-  window.location.href = ('http://127.0.0.1:5500/es.html')
+  window.location.href = ('./es.html')
 });
 
 saibaMais.addEventListener('click', () => {
-  window.location.href = ('http://127.0.0.1:5500/saiba-mais.html')
+  window.location.href = ('./saiba-mais.html')
 });
 
 

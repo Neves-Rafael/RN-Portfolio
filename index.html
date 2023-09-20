@@ -11,14 +11,14 @@
 
     <title>Rafael Neves - Portfolio</title>
 </head>
-<body class="bg-fundo 2xl:ml-[10%]">
+<body class="bg-fundo xl:ml-[200px]">
     <!-- HEADER -->
     <div class="fixed block z-20 left-5 top-5" id="button-menu">
         <button class="bg-white border-[10px] border-fundo p-1 xl:hidden">||| Menu</button>
     </div>
 
     <header class="bg-black fixed z-50 left-0 top-0 bottom-0 w-[200px] hidden xl:block" id="header">
-        <button class="absolute bg-white ml-[180px] top-4 px-4 py-2 rounded-sm hover:bg-light-green" id="close-header">x</button>
+        <button class="absolute bg-white ml-[180px] top-4 px-4 py-2 rounded-sm hover:bg-light-green xl:hidden" id="close-header">x</button>
         <nav class="flex flex-col h-full justify-between items-center pt-6 pb-6">
             <ul>
                 <div class="pb-4">
@@ -77,25 +77,24 @@
     <!-- /HEADER -->
 
     <!-- HOME PAGE -->
-    <section class="h-screen container w-[95%] m-auto pt-10" id="homePage">
+    <section class="h-screen w-[95%] m-auto pt-10 xl:w-[90%] 2xl:w-[70%]" id="homePage">
         <div class="flex flex-col justify-around h-full">
             <div>
-                <h1 class="text-white text-4xl font text-center font-roboto py-10">Olá, Seja bem vindo!</h1>
+                <h1 class="text-white text-4xl font text-center font-roboto py-10 xl:text-6xl">Olá, Seja bem vindo!</h1>
             </div>
-            <div class="w-full flex flex-col justify-between gap-2 2xl:flex-row">
+            <div class="w-full flex flex-col justify-between gap-2 xl:flex-row">
                 <div class="m-auto font-roboto">
-                    <p class="text-white text-sm max-w-xl">Meu nome é Rafael Neves, tenho 22 anos e sou apaixonado por design e programação. Formado em Design Gráfico, domino 
-                    linguagens como HTML, CSS e JavaScript, além de utilizar diversas ferramentas para otimizar meus projetos.</p><br>
+                    <p class="text-white text-sm md:w-[80%] m-auto md:text-lg xl:w-[90%] 2xl:w-full">Meu nome é Rafael Neves, tenho 22 anos e sou apaixonado por design e programação. Formado em Design Gráfico, domino linguagens como HTML, CSS e JavaScript, além de utilizar diversas ferramentas para otimizar meus projetos.</p><br>
 
-                    <P class="text-white text-sm max-w-xl">Sou um profissional responsável, atencioso e multitarefas. Gosto de encontrar soluções criativas para os problemas e estou sempre aprendendo para oferecer ideias inovadoras.<br> Meu objetivo é combinar design e programação para criar boas experiências digitais.
+                    <P class="text-white text-sm md:w-[80%] m-auto md:text-lg xl:w-[90%] 2xl:w-full">Sou um profissional responsável, atencioso e multitarefas. Gosto de encontrar soluções criativas para os problemas e estou sempre aprendendo para oferecer ideias inovadoras.<br> Meu objetivo é combinar design e programação para criar boas experiências digitais.
                     </p><br>
                 </div>
 
-                <div class="max-w-[700px] m-auto">
-                    <img src="svgs/lc.svg"  class="w-[750px]">
+                <div class="m-auto max-w-[700px]">
+                    <img src="svgs/lc.svg"  class=" sm:max-w-xl 2xl:max-w-2xl">
                 </div>
             </div>
-            <div class="text-white flex flex-row justify-around bg-normal-green p-2 text-[12px]">
+            <div class="text-white flex flex-row justify-around bg-normal-green p-2 text-[12px] 2xl:text-base">
                 <div class="text-center">
                     <p>Conhecimento E</p>
                     <p>Habilidade Técnica</p>
@@ -117,17 +116,17 @@
     <!-- /HOME PAGE -->
 
     <!-- First Section (Projetos) -->
-    <section class="h-[100vh] container w-[95%] m-auto" id="firstSection">
-        <div class="flex flex-col justify-center h-full items-center gap-10">
+    <section class="h-[100vh] w-[95%] m-auto md:h-[125vh] 2xl:w-[70%]" id="firstSection">
+        <div class="flex flex-col justify-center h-full items-center gap-10 2xl:flex-row">
             <div class="">
                 <div>
-                    <h1 class="text-6xl text-center text-white">PROJETOS</h1>
+                    <h1 class="text-6xl text-center text-white xl:text-8xl">PROJETOS</h1>
                 </div>
-                <div>
+                <div class="2xl:w-[550px]">
                     <img src="svgs/project.svg" alt="">
                 </div>
             </div>
-            <div class="w-full">
+            <div class="w-full md:w-3/4">
                 <div class="w-auto h-auto border-4 border-white rounded-md p-4 gap-4 flex flex-col overflow-auto">
                     <div class="flex bg-white p-4 rounded-md">
                         <div class="">
@@ -144,18 +143,18 @@
     </section>
     <!-- /First Section -->
 
-    <!-- Second Section -->
-    <section class="h-auto container w-[95%] m-auto relative mt-[8vh]" id="secondSection">
+    <!-- Second Section (skills) -->
+    <section class="h-auto container w-[95%] m-auto relative mt-[18vh] 2xl:w-[70%]" id="secondSection">
         <div class="flex justify-center w-auto">
-            <div class="text-6xl text-center text-white absolute top-[-8vh]">Skills</div>
+            <div class="text-6xl text-center text-white absolute top-[-18vh] md:text-7xl xl:text-8xl">Skills</div>
         </div>
         <div class="flex justify-center h-auto">
             <div class="w-1 h-full absolute bg-light-green z-0"></div>
         </div>
-        <div class=" flex flex-col gap-8">
+        <div class=" flex flex-col gap-8 md:gap-0">
             <!-- HTML -->
-            <div class="z-10">
-                <div class="bg-normal-green p-2">
+            <div class="z-10 md:flex md:justify-start">
+                <div class="bg-normal-green p-2 md:w-[49%]">
                     <div>
                         <div class="flex">
                             <p class="text-white text-3xl font-robotos px-4 py-2">HTML</p>
@@ -167,8 +166,8 @@
             </div>
             <!-- /HTML -->
             <!-- CSS -->
-            <div class="z-10">
-                <div class=" bg-normal-green p-2">
+            <div class="z-10 md:flex md:justify-end">
+                <div class=" bg-normal-green p-2 md:w-[49%]">
                     <div>
                         <div class="flex">
                             <p class="text-white text-3xl font-robotos px-4 py-2">CSS</p>
@@ -180,8 +179,8 @@
             </div>
             <!-- /CSS -->
             <!-- JS -->
-            <div class="z-10">
-                <div class=" bg-normal-green p-2">
+            <div class="z-10 md:flex md:justify-start">
+                <div class=" bg-normal-green p-2 md:w-[49%]">
                     <div>
                         <div class="flex">
                             <p class="text-white text-2xl pr-2 font-robotos py-2">JavaScript</p>
@@ -194,8 +193,8 @@
             </div>
             <!-- /JS -->
             <!-- tailwind -->
-            <div class="z-10">
-                <div class=" bg-normal-green p-2">
+            <div class="z-10 md:flex md:justify-end">
+                <div class=" bg-normal-green p-2 md:w-[49%]">
                     <div>
                         <div class="flex">
                             <p class="text-white text-2xl font-robotos pr-2 py-2">TailwindCSS</p>
@@ -207,8 +206,8 @@
             </div>
             <!-- /tailwind -->
             <!-- REACT -->
-            <div class="z-10">
-                <div class=" bg-normal-green p-2">
+            <div class="z-10 md:flex md:justify-start">
+                <div class=" bg-normal-green p-2 md:w-[49%]">
                     <div>
                         <div class="flex">
                             <p class="text-white text-2xl font-robotos pr-2 py-2">REACT</p>
@@ -235,8 +234,8 @@
             </div> -->
             <!-- /TypeScript -->
             <!-- Figma -->
-            <div class="z-10">
-                <div class="bg-normal-green p-2">
+            <div class="z-10 md:flex md:justify-end">
+                <div class="bg-normal-green p-2 md:w-[49%]">
                     <div>
                         <div class="flex">
                             <p class="text-white text-2xl font-robotos pr-2 py-2">Figma</p>
@@ -252,63 +251,65 @@
     <!-- /Second Section -->
 
     <!-- Third Section(contact) -->
-    <section class="h-full container w-[95%] m-auto py-20" id="thirdSection">
-        <div class="flex flex-col justify-between h-full items-center gap-1">
-            <div class="flex flex-col gap-6">
-                <div class="">
-                    <p class="text-white text-center text-6xl pb-5">Contact-Me</p>
-                    <p class="max-w-[600px] text-gray text-center">Fique a vontade de me enviar um e-mail no campo abaixo ou entrar em contato pelas minhas redes sociais, toda crítica ou sugestão é bem vinda!</p>
+    <section class="h-full w-[95%] m-auto py-20 2xl:mt-40 2xl:w-[70%] 2xl:h-auto" id="thirdSection">
+        <div class="flex flex-col h-full items-center gap-10">
+            <div class="flex flex-col gap-6 xl:w-1/2">
+                <div class="m-auto">
+                    <p class="text-white text-center text-6xl pb-5 md:text-7xl xl:text-8xl">Contact-Me</p>
+                    <p class="max-w-[600px] text-gray text-center 2xl:text-">Fique a vontade de me enviar um e-mail no campo abaixo ou entrar em contato pelas minhas redes sociais, toda crítica ou sugestão é bem vinda!</p>
                 </div>
-                <div>
-                    <img src="svgs/contact.svg" alt="" class="m-auto">
-                </div>
-                <div class="flex gap-4">
-                    <form action="https://formsubmit.co/nevesrafael.dev@gmail.com" method="POST" class="flex flex-col gap-4 w-full">
-                        <div class="flex gap-2">
-                            <input type="text" name="name" id="" class="w-full placeholder:p-1 p-1" placeholder="Digite seu nome" required>
-                            <input type="email" name="email" id="" class="w-full placeholder:p-1 p-1" placeholder="Digite seu E-mail" required>
-                        </div>
-                        <textarea name="message" id="" cols="" rows="10" placeholder="Digite sua mensagem" class="placeholder:p-1 p-1 resize-y w-full" required></textarea>
-                        <div>
-                            <button type="submit" class="text-start text-white text-xl bg-gray py-1 px-6 rounded-full hover:bg-medium-green">Submit</button>
-                        </div>
-                        <input type="hidden" name="_subject" value="Novo Contato!">
-                        <input type="text" name="_honey" style="display: none;">
-                        <input type="hidden" name="_captcha" value="false">
-                    </form>
+            </div>
+            <div class="flex flex-col-reverse gap-4 w-full md:w-3/4">
+                <form action="https://formsubmit.co/nevesrafael.dev@gmail.com" method="POST" class="flex flex-col m-auto gap-6 w-full xl:w-3/4">
+                    <div class="flex gap-2">
+                        <input type="text" name="name" id="" class="w-full placeholder:p-1 p-1" placeholder="Digite seu nome" required>
+                        <input type="email" name="email" id="" class="w-full placeholder:p-1 p-1" placeholder="Digite seu E-mail" required>
+                    </div>
+                    <textarea name="message" id="" cols="" rows="10" placeholder="Digite sua mensagem" class="placeholder:p-1 p-1 resize-y w-full" required></textarea>
+                    <div>
+                        <button type="submit" class="text-start text-white text-xl bg-gray py-1 px-6 rounded-full hover:bg-medium-green">Submit</button>
+                    </div>
+                    <input type="hidden" name="_subject" value="Novo Contato!">
+                    <input type="text" name="_honey" style="display: none;">
+                    <input type="hidden" name="_captcha" value="false">
+                </form>
+                <div class="xl:w-3/4 m-auto">
+                    <img src="svgs/contact.svg" alt="" class="m-auto xl:w-3/4">
                 </div>
             </div>
         </div>
     </section>
     <!-- /Third Section -->
+    <!-- Footer -->
     <footer class="bg-black h-auto mt-14 py-10">
-        <div class="flex flex-col justify-around items-center h-full container gap-2 text-[10px] font-roboto text-center">
+        <div class="flex flex-col justify-center items-center h-full gap-8 text-[10px] font-roboto text-center md:flex-row 2xl:text-xs">
             <div class="text-gray ">
                 <p>E-mail: nevesrafael.dev@gmail.com</p>
                 <p>Telefone: +55 (61) 99449-0793</p>
             </div>
-            <div class="w-[70%] h-[1px] bg-gray"></div>
+            <div class="w-[70%] h-[1px] bg-gray md:w-[1px] md:h-[40px]"></div>
             <div class="text-gray">
                 <p>Todos os Direitos reservados.</p>
                 <p>&#169; Rafael Neves 2023</p>
             </div>
-            <div class="w-[70%] h-[1px] bg-gray"></div>
+            <div class="w-[70%] h-[1px] bg-gray md:w-[1px] md:h-[40px]"></div>
             <div>
-                <img src="svgs/logo.svg" alt="" class="w-20">
+                <img src="svgs/logo.svg" alt="" class="w-20 md:mx-4">
             </div>
-            <div class="w-[70%] h-[1px] bg-gray"></div>
+            <div class="w-[70%] h-[1px] bg-gray md:w-[1px] md:h-[40px]"></div>
             <div class="text-gray">
                 <p>Créditos e Atribuições</p>
                 <p>Imagems: https://storyset.com</p>
                 <p>Icones: https://devicons.com</p>
             </div>
-            <div class="w-[70%] h-[1px] bg-gray"></div>
+            <div class="w-[70%] h-[1px] bg-gray md:w-[1px] md:h-[40px]"></div>
             <div class="text-gray">
                 <p>Versão do Site: 1.0</p>
                 <p>(Última Atualização: Setembro 2023)</p>
             </div>
         </div>
     </footer>
+    <!-- /Footer -->
     <script src="js/script.js"></script>
 </body>
 </html>
