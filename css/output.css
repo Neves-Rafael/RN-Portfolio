@@ -596,10 +596,6 @@ body {
   left: 1.25rem;
 }
 
-.left-\[200px\] {
-  left: 200px;
-}
-
 .top-0 {
   top: 0px;
 }
@@ -614,10 +610,6 @@ body {
 
 .top-\[-18vh\] {
   top: -18vh;
-}
-
-.right-0 {
-  right: 0px;
 }
 
 .z-0 {
@@ -658,14 +650,6 @@ body {
 
 .mt-\[18vh\] {
   margin-top: 18vh;
-}
-
-.ml-60 {
-  margin-left: 15rem;
-}
-
-.ml-\[200px\] {
-  margin-left: 200px;
 }
 
 .block {
@@ -886,6 +870,16 @@ body {
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
+.border-black {
+  --tw-border-opacity: 1;
+  border-color: rgb(14 14 14 / var(--tw-border-opacity));
+}
+
+.border-gray {
+  --tw-border-opacity: 1;
+  border-color: rgb(115 115 115 / var(--tw-border-opacity));
+}
+
 .bg-black {
   --tw-bg-opacity: 1;
   background-color: rgb(14 14 14 / var(--tw-bg-opacity));
@@ -914,6 +908,16 @@ body {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-medium-green {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 120 119 / var(--tw-bg-opacity));
+}
+
+.bg-light {
+  --tw-bg-opacity: 1;
+  background-color: rgb(245 245 245 / var(--tw-bg-opacity));
 }
 
 .p-1 {
@@ -973,11 +977,6 @@ body {
   padding-bottom: 1rem;
 }
 
-.py-80 {
-  padding-top: 20rem;
-  padding-bottom: 20rem;
-}
-
 .pb-2 {
   padding-bottom: 0.5rem;
 }
@@ -1016,10 +1015,6 @@ body {
 
 .pt-6 {
   padding-top: 1.5rem;
-}
-
-.pt-20 {
-  padding-top: 5rem;
 }
 
 .text-center {
@@ -1180,9 +1175,37 @@ font-family: 'Roboto Slab', serif;
   transition-duration: 150ms;
 }
 
+:is(.dark .dark\:border-none) {
+  border-style: none;
+}
+
+:is(.dark .dark\:border-white) {
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
+}
+
+:is(.dark .dark\:bg-fundo) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(32 33 36 / var(--tw-bg-opacity));
+}
+
+:is(.dark .dark\:bg-white) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+:is(.dark .dark\:text-white) {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
 @media (min-width: 640px) {
   .sm\:max-w-xl {
     max-width: 36rem;
+  }
+
+  .sm\:flex-row {
+    flex-direction: row;
   }
 }
 
@@ -1204,8 +1227,8 @@ font-family: 'Roboto Slab', serif;
     height: 40px;
   }
 
-  .md\:h-3\/4 {
-    height: 75%;
+  .md\:w-3\/4 {
+    width: 75%;
   }
 
   .md\:w-\[1px\] {
@@ -1218,14 +1241,6 @@ font-family: 'Roboto Slab', serif;
 
   .md\:w-\[80\%\] {
     width: 80%;
-  }
-
-  .md\:w-1\/2 {
-    width: 50%;
-  }
-
-  .md\:w-3\/4 {
-    width: 75%;
   }
 
   .md\:flex-row {
@@ -1253,6 +1268,11 @@ font-family: 'Roboto Slab', serif;
     font-size: 1.125rem;
     line-height: 1.75rem;
   }
+
+  .md\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
 }
 
 @media (min-width: 1280px) {
@@ -1268,32 +1288,28 @@ font-family: 'Roboto Slab', serif;
     display: none;
   }
 
-  .xl\:h-\[100vh\] {
-    height: 100vh;
-  }
-
-  .xl\:w-auto {
-    width: auto;
-  }
-
-  .xl\:w-\[90\%\] {
-    width: 90%;
-  }
-
   .xl\:w-1\/2 {
     width: 50%;
-  }
-
-  .xl\:w-full {
-    width: 100%;
   }
 
   .xl\:w-3\/4 {
     width: 75%;
   }
 
-  .xl\:max-w-3xl {
-    max-width: 48rem;
+  .xl\:w-\[90\%\] {
+    width: 90%;
+  }
+
+  .xl\:w-full {
+    width: 100%;
+  }
+
+  .xl\:w-\[70\%\] {
+    width: 70%;
+  }
+
+  .xl\:w-\[80\%\] {
+    width: 80%;
   }
 
   .xl\:flex-row {
@@ -1316,86 +1332,32 @@ font-family: 'Roboto Slab', serif;
 }
 
 @media (min-width: 1536px) {
-  .\32xl\:mt-10 {
-    margin-top: 2.5rem;
-  }
-
-  .\32xl\:mt-20 {
-    margin-top: 5rem;
-  }
-
-  .\32xl\:mt-60 {
-    margin-top: 15rem;
-  }
-
   .\32xl\:mt-40 {
     margin-top: 10rem;
-  }
-
-  .\32xl\:h-\[100vh\] {
-    height: 100vh;
-  }
-
-  .\32xl\:h-\[110vh\] {
-    height: 110vh;
   }
 
   .\32xl\:h-auto {
     height: auto;
   }
 
-  .\32xl\:w-\[80\%\] {
-    width: 80%;
-  }
-
-  .\32xl\:w-full {
-    width: 100%;
-  }
-
-  .\32xl\:w-\[500px\] {
-    width: 500px;
-  }
-
-  .\32xl\:w-1\/2 {
-    width: 50%;
-  }
-
   .\32xl\:w-\[550px\] {
     width: 550px;
-  }
-
-  .\32xl\:w-\[750px\] {
-    width: 750px;
   }
 
   .\32xl\:w-\[70\%\] {
     width: 70%;
   }
 
-  .\32xl\:max-w-xl {
-    max-width: 36rem;
+  .\32xl\:w-full {
+    width: 100%;
   }
 
   .\32xl\:max-w-2xl {
     max-width: 42rem;
   }
 
-  .\32xl\:max-w-3xl {
-    max-width: 48rem;
-  }
-
   .\32xl\:flex-row {
     flex-direction: row;
-  }
-
-  .\32xl\:text-lg {
-    font-size: 1.125rem;
-    line-height: 1.75rem;
-  }
-
-  .\32xl\:text-sm {
-    font-size: 0.875rem;
-    line-height: 1.25rem;
   }
 
   .\32xl\:text-base {

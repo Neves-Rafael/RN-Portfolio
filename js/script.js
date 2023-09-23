@@ -17,10 +17,14 @@ function toggleDarkTheme() {
     localStorage.setItem('dark-theme','true');
     DarkMode.style.display = 'block';
     lightMode.style.display = 'none';
+    body.classList.add('bg-fundo');
+    body.classList.remove('bg-white');
   } else {
     localStorage.removeItem('dark-theme');
     DarkMode.style.display = 'none';
     lightMode.style.display = 'block';
+    body.classList.add('bg-white');
+    body.classList.remove('bg-fundo');
   }
 }
 
@@ -29,9 +33,13 @@ if(localStorage.getItem('dark-theme')) {
   body.classList.add('dark');
   DarkMode.style.display = 'block';
   lightMode.style.display = 'none';
+  body.classList.add('bg-fundo');
+  body.classList.remove('bg-white');
 } else {
   DarkMode.style.display = 'none';
   lightMode.style.display = 'block';
+  body.classList.add('bg-white');
+  body.classList.remove('bg-fundo');
 }
 
 
@@ -98,10 +106,86 @@ window.addEventListener("click", function(event) {
 
 
 //rolar até a seção desejada
-// const document.getElementById(''),
-//       document.getElementById(''),
-//       document.getElementById(''),
-//       document.getElementById(''),
-//       document.getElementById(''),
-//       document.getElementById(''),
-//       document.getElementById('');
+//seleção dos botões
+const projetos = document.getElementById('hProject'),
+      habilidades = document.getElementById('hSkills'),
+      contato = document.getElementById('hContact'),
+      logo = document.getElementById('logo-header'),
+      footerLogo = document.getElementById('logo-footer'),
+      gmailRedirect = document.getElementById('btnGmail');
+      //seleção da seção de destino
+      homePage = document.getElementById('homePage'),
+      firstSection = document.getElementById('firstSection'),
+      secondSection = document.getElementById('secondSection'),
+      thirdSection = document.getElementById('thirdSection');
+
+projetos.addEventListener('click', () => {
+  firstSection.scrollIntoView({ behavior: 'smooth' });
+})
+
+habilidades.addEventListener('click', () => {
+  secondSection.scrollIntoView({ behavior: 'smooth' });
+})
+
+contato.addEventListener('click', () => {
+  thirdSection.scrollIntoView({ behavior: 'smooth' });
+})
+
+logo.addEventListener('click', () => {
+  homePage.scrollIntoView({ behavior: 'smooth' });
+})
+
+footerLogo.addEventListener('click', () => {
+  homePage.scrollIntoView({ behavior: 'smooth' });
+})
+
+gmailRedirect.addEventListener('click', () => {
+  thirdSection.scrollIntoView({ behavior: 'smooth' });
+})
+
+
+//SCROLL REVEAL
+
+window.sr = ScrollReveal({ reset: true })
+
+ScrollReveal().reveal('.sr-html', {
+  delay: 250, 
+  origin: 'left',
+  easing: 'ease-in'
+  
+});
+
+ScrollReveal().reveal('.sr-css', {
+  delay: 500, 
+  origin: 'right',
+  easing: 'ease-in'
+  
+});
+
+ScrollReveal().reveal('.sr-js', {
+  delay: 500, 
+  origin: 'left',
+  easing: 'ease-in'
+  
+});
+
+ScrollReveal().reveal('.sr-tail', {
+  delay: 500, 
+  origin: 'right',
+  easing: 'ease-in'
+  
+});
+
+ScrollReveal().reveal('.sr-react', {
+  delay: 500, 
+  origin: 'left',
+  easing: 'ease-in'
+  
+});
+
+ScrollReveal().reveal('.sr-figma', {
+  delay: 500, 
+  origin: 'right',
+  easing: 'ease-in'
+  
+});
