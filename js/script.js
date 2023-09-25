@@ -70,12 +70,12 @@ portuguese.addEventListener('click', () => {
 });
 
 english.addEventListener('click', () => {
-  window.location.href = ('./en-us.html')
+  window.location.href = ('./en.html')
 });
 
-spanish.addEventListener('click', () => {
-  window.location.href = ('./es.html')
-});
+// spanish.addEventListener('click', () => {
+//   window.location.href = ('./es.html')
+// });
 
 saibaMais.addEventListener('click', () => {
   window.location.href = ('./saiba-mais.html')
