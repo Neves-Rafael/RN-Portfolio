@@ -1,2 +1,0 @@
-# RN-Portfolio
-My portfolio

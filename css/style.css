@@ -3,9 +3,9 @@
 @tailwind utilities;
 
 @layer base {
-    body {
-        font-family: 'Bebas Neue', sans-serif;
-    }
+  body {
+    font-family: "Bebas Neue", sans-serif;
+  }
 }
 
 /* 
